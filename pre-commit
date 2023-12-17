@@ -1,0 +1,16 @@
+# remove the degugging code
+mark_begin='# begin of debug code'
+mark_end='# end of debug code'
+
+sed -i.bak "/$mark_begin/,/$mark_end/{
+  /if DEBUG_ENABLED = True:/,/else:/d
+  s/^    //
+  /$mark_begin/d
+  /$mark_end/d
+}" test.py
+
+# Add the modified files to the staging area
+git add test.py
+
+# Inform the user
+echo "Debugging code removed. Ready to commit."
