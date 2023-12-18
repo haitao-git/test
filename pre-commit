@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # remove the degugging code
 mark_begin='# begin of debug code'
 mark_end='# end of debug code'
