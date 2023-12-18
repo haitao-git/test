@@ -4,15 +4,19 @@
 mark_begin='# begin of debug code'
 mark_end='# end of debug code'
 
+shopt -s globstar
+
 sed -i.bak "/$mark_begin/,/$mark_end/{
   /if DEBUG_ENABLED = True:/,/else:/d
   s/^    //
   /$mark_begin/d
   /$mark_end/d
-}" test.py
+}" **/*.py
 
 # Add the modified files to the staging area
-git add test.py
+git add **/*.py
+
+shopt -u globstar
 
 # Inform the user
 echo "Debugging code removed. Ready to commit."
