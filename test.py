@@ -1,5 +1,6 @@
 # begin of the code
 
+# test 2
 
 # start of the normal block
 if true:
