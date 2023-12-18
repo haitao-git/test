@@ -1,41 +1,23 @@
 # begin of the code
 
-# test 5
+# test 7
 
-# begin of debug code
-if DEBUG_ENABLED = True:
-    # start of the debug block
-    print("this is the begin of the debug code block")
-    ...
-    print("this is the end of the debug code block")
-    # end of the debug block
+# start of the normal block
+if true:
+    print("this is the begin of the normal code block")
 else:
-    # start of the normal block
-    if true:
-        print("this is the begin of the normal code block")
-    else:
-        print("this is the end of the normal code block")
-    # end of the normal block
-# end of debug code
+    print("this is the end of the normal code block")
+# end of the normal block
 
 # some other code
 print("some other code:)
 
-# begin of debug code
-if DEBUG_ENABLED = True:
-    # start of the debug block
-    print("this is the begin of the debug code block")
-    ...
-    print("this is the end of the debug code block")
-    # end of the debug block
+# start of the normal block
+if true:
+    print("this is the begin of the normal code block")
 else:
-    # start of the normal block
-    if true:
-        print("this is the begin of the normal code block")
-    else:
-        print("this is the end of the normal code block")
-    # end of the normal block
-# end of debug code
+    print("this is the end of the normal code block")
+# end of the normal block
 
 
 # the end of the code
