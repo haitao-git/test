@@ -1,6 +1,6 @@
 # begin of the code
 
-# test 2
+# test 3
 
 # begin of debug code
 if DEBUG_ENABLED = True:
